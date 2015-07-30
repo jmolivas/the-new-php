@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The New PHP</title>
+
+		<meta name="description" content="The New PHP">
+		<meta name="author" content="Jesus Manuel Olivas">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style"
+					content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+		maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night-bright.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet
+		<script> 	document.write( '<link rel="stylesheet" href="css/print/' + (
+		window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css"
+		type="text/css" media="print">' ); </script>
+		-->
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<div class="reveal">
+
+			<!-- Any section element inside of this container displayed as slide -->
+			<div class="slides">
+				
+				<section>
+					<h1 class="big">The New PHP</h1>
+					<h3>DrupalCamp Sao Paulo 2015</h3>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+					<hr>
+					<div class="half">
+						<img src="assets/images/jmolivas.jpg" >
+						<br/>
+						<div>
+							<h3 class="name">Jesus Manuel Olivas</h3>
+							<h3 class="name">Drupal 8 Solutions Engineer</h3>
+						</div>
+						<div  class="text-small">
+							<p>
+							<a target="_blank"  href="http://twitter.com/jmolivas" target="_blank">@jmolivas</a> | 
+							<a target="_blank"  href="http://twitter.com/drupalconsole" target="_blank">@drupalconsole</a>
+							</p>
+							<a target="_blank"  href="http://twitter.com/drupodcast" target="_blank">@drupodcast</a>
+						</div>
+					</div>
+					<div class="half">
+						<p>
+							<br/><br/><br/>
+							<img src="assets/images/ffw-logo.png"  class="no-border">
+							<br/><br/><br/><br/>
+						</p>
+						<div>
+							<h3 class="name">I work for FFW</h3>
+							<h3 class="name"><i>(and you should too)</i></h3>
+						</div>
+					</div>
+					<aside class="notes">
+						<p>My names is ....</p>
+						<p>I work for FFW (Formely knonw as Blink reaction & Propeople</p>
+					</aside>
+				</section>
+
+				<section data-background="assets/images/php20years.jpg">
+					<p>
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<a class="white-back" href="https://twitter.com/erikaheidi">@erikaheidi</a>
+						<br/>
+						<a class="white-back" href="http://erikaheidi.com/blog/celebrating-php-twenty-years">http://erikaheidi.com/blog/celebrating-php-twenty-years</a>
+					</p>
+					<aside class="notes">
+						<p>
+							This session name is "The New PHP", WAT, wait, but PHP is already 20 years old.
+						</p>
+						<p>
+							Maybe, the not so New PHP could be a better session title.
+						</p>
+						<p>
+							The most resent PHP version is 5.6.9 and the next major version will be 7.0.
+						</p>
+						<p>
+							 Because we all know 7 came after 5 right.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>PHP 7</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/php7-timeline.png" alt="">
+						<h3>
+						<a href="https://wiki.php.net/rfc/php7timeline">
+							https://wiki.php.net/rfc/php7timeline
+						</a>
+						</h3>
+					</p>
+					<aside class="notes">
+						<p>
+							PHP 7 will be released before the end of 2015.
+						</p>
+						<p>
+							Probably before Drupal 8.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Symfony 3</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/symfony3.png" alt="">
+					</p>
+					<h3>
+						<a href="http://symfony.com/roadmap?version=3.0#checker">http://symfony.com/roadmap?version=3.0#checker</a>
+					</h3>
+					<aside class="notes">
+						<p>
+							Another major release happening by the end of this year and also probably before Drupal 8 too is Symfony 3. 
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Drupal 8</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/drupalreleasedate.png" alt="">
+					</p>
+					<h3>
+						<a href="https://drupalreleasedate.com/">https://drupalreleasedate.com/</a>
+					</h3>
+					<aside class="notes">
+						<p>
+							And according to drupalreleasedate.com Drupal 8 will be release on.
+						</p>
+						<p>
+							Stop talking about promises and focus on taling about what is already out and we can take advantage of.
+						</p>
+					</aside>
+				</section>
+
+				<!-- <section>					
+					<ul class="bullets">
+						<li>Symfony</li>
+						<li>Components</li>
+						<li>Standards</li>
+						<li>Library sharing.</li>
+						<li>The HTTP Lifecycle</li>
+						<li>Projects</li>
+					</ul>
+				</section> -->
+
+				<section data-background="#0076C2">
+					<h1 class="big white">Symfony</h1>
+				</section>
+
+				<section>
+						<h2>What is Symfony</h2>
+						<hr/>
+						<h3 class="title">Symfony is a group of decoupled components and other standalone PHP libraries.</h3>
+						<br/>
+						<h3 class="title">Then, based on these components, Symfony is also a full-stack web framework.</h3>
+						<aside class="notes">
+							<p>We can define Symfony as a group of decoupled components and other stand alone libraries.</p>
+							<p>And then based on these components Symfony is a full-stack web framework.</p>
+							<p>Does anyone knows which aproach is Drupal 8 using ?</p>
+							<p>Drupal is not using Symfony as a full stack framework.</p>
+							<p>Drupal is only taking advantage of some specific components.</p>
+						</aside>
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="big white">Drupal dependencies</h1>
+				</section>
+
+				<section>
+					<img src="assets/images/drupal-composer.png" alt="" class="no-border">
+					<p>
+					<a href="https://github.com/drupal/drupal/blob/8.0.x/core/composer.json#L6">core/composer.json</a>
+					</p>
+				</section>	
+
+				<section data-background="#000">
+					<h1 class="big white">What is the benefit of reusing more code.</h1>
+					<aside class="notes">
+						<p>The way to be more productive is to write less code and to reuse more code.</p>
+						<p>Sharing is how Open Source works</p>
+					</aside>
+				</section>
+
+				<section>
+					<blockquote>The Best Code is No Code At All</blockquote>
+					-- Jeff Atwood 
+					<br/><br/>
+					<blockquote>Code is bad. It rots. It requires periodic maintenance. It has bugs that need to be found. New features mean old code has to be adapted.</blockquote>
+					-- Rich Skrenta
+					<aside class="notes">
+						<p>The more code you have, the more places there are for bugs to hide.</p>
+						<p>The more code you have, the more code you need to maintain.</p>
+					</aside>
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="big white"><strike>Standards</strike> Recommendations</h1>
+				</section>
+
+				<section>
+					<h2>Framework Interoperability Group</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/php-fig.png" alt="">
+					</p>
+					<a href="http://www.php-fig.org">http://www.php-fig.org</a>
+					<aside class="notes">
+						<p>Some people say is like the United Nations of the PHP, but I am not sure if that is a good or bad reference.</p>
+						<p>
+							The idea behind this group is to group the project representatives of different frameworks to talk about the similitudes between the projects and find ways to work together.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Accepted recommendations</h2>
+					<hr/>
+					<ul class="bullets">
+						<li>PSR-0 Autoloading Standard</li>
+						<li>PSR-1 Coding Standards</li>
+						<li>PSR-2 Coding Style Guide</li>
+						<li><span class="underlined">PSR-3 Logger Interface</span></li>
+						<li><span class="underlined">PSR-4 Improved Autoloading</span></li>
+						<li>PSR-7 HTTP Message Interfaces</li>
+					</ul>
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="big white">Library sharing</h1>
+				</section>
+
+				<section>
+					<h2>Composer</h2>
+					<hr/>
+					<br/>
+					<p>
+						<img class="no-border" src="assets/images/composer-logo.png">
+					</p>
+						 <a href="http://getcomposer.org/">http://getcomposer.org/</a>
+					</p>
+					<aside class="notes">
+						<p>
+							Composer is a Dependency Manager for PHP. 
+	            		</p>
+	            		<p>
+	            			It allows you to declare the dependent libraries your project needs and take care of downloading.
+	            		</p>
+	            		<p>
+	            			Probably this library you are requiring is also dependent on another library or libraries, well worry not composer will resolve that too.
+	            		</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Download Composer</h2>
+					<hr/>
+					<br/>
+<pre><code class="bash text-small">
+$ curl -sS https://getcomposer.org/installer | php​
+
+$ chmod +x composer.phar
+
+$ mv composer.phar /usr/local/bin/composer
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>How to use Composer</h2>
+					<hr/>
+
+<pre><code class="bash text-medium">
+$ composer init 
+
+$ composer search faker
+
+$ composer show fzaninotto/faker
+
+$ composer require fzaninotto/faker:v1.3.0
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>How to use Composer</h2>
+					<hr/>
+
+<pre><code class="bash text-medium">
+/* composer.json */
+{
+    "require": {
+        "fzaninotto/faker": "v1.3.0"
+    }
+}
+
+$ composer install
+
+$ composer update
+
+$ composer show --installed
+
+</code></pre>
+				<aside class="notes">
+					<p>
+						Awesome now you know how to handle, third party dependencies in every moder PHP framework but not Drupal.
+					</p>
+					<p>
+						Because ...
+					</p>
+				</aside>
+				</section>
+
+				<section>
+					<h2>Composer Manager</h2>
+					<hr>
+<pre><code class="bash text-big">
+$ drush dl composer_manager
+
+$ drush en -y composer_manager
+
+$ drush composer-manager-init
+
+</code></pre>
+<br>
+<p>
+	<a href="http://drupal.org/project/composer_manager">http://drupal.org/project/composer_manager</a>
+</p>
+				<aside class="notes">
+					<p>
+						As a friend of mine Luis Cordova a developer from Perú, but this is drupal/drupal and it won't be that easy.	
+					</p>
+					<p>
+						And I need to say he is maybe right, seems like we use to make thing harder or maybe not hareder, just different "Drupalisims anyone"
+					</p>
+					<p>
+						We already have drush why not use for this purpose ...
+					</p>
+					<p>
+						<ul>
+							<li>No more Copy/Paste of libraries</li>
+							<li>Resolves dependencies</li>
+							<li>Each project defines its own requirements</li>
+							<li>Performs build tasks</li>
+						</ul>
+					</p>
+				</aside>
+				</section>
+
+				<section>
+					<h2>Packagist</h2>
+					<hr/>
+					<p>
+						<img class="no-border" src="assets/images/packagist-final-blue.png">
+					</p>
+					<p>
+						<a href="https://packagist.org/">https://packagist.org/</a>
+					</p>
+					<aside class="notes">
+						<p>
+							Where are those libraries definitions stored.
+						</p>
+						<p>
+							All those libraries are stored at Packagist, the PHP archivist.
+						</p>
+
+					</aside>
+				</section>
+
+				<section data-background="#000">
+					<h1 class="big white">Why composer and packagist are important?</h1>
+					<br/><br/>
+					<h2 class="big white">Which problem they solved ?</h2>
+					<aside class="notes">
+						<p>
+							You may be wonder why having an standard mechanisim for sharing libraries is so important.
+						</p>
+						<p>
+							We already have drush and drush help us to download modules.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>The CopyPasta era</h2>
+					<hr/>
+					<p>
+						<img class="no-border" src="assets/images/copy-pasta.jpg">
+					</p>
+					<aside class="notes">
+						<p>
+							Remeber the copy-pasta era, where you just copy/paste code from a geocities page you found atfer searching using yahoo or altavista.
+						</p>
+						<p>
+							Oh boy ... the good old days.
+						</p>
+					</aside>
+				</section>
+
+				<section data-background="assets/images/phpclasses.png">
+					<aside class="notes">
+						<p>
+							Then you learn the cool kids those days used to visit phpclasses.org to download libraries.
+						</p>
+						<p>Fortunely those days are over.</p>
+					</aside>
+				</section>
+
+				<section data-background="#000">
+					<h1 class="big white">Why release my code as a package or library?</h1>
+				</section>
+
+				<section>
+					<h3 class="title">
+						<br/>
+						You sould try to move the generic and reusable logic to and external repository and share at github/bitbucket or other.
+					</h3>
+				</section>
+				<section>
+					<h3 class="title">
+						Same Library can be shared accross differents projects, CMS and frameworks. (Drupal 7/8, Symfony, Silex, Laravel, Wordpress, Backdrop, etc.)
+					</h3>
+					<aside class="notes">
+						And create repo availabe at github/bitbucket or other.
+						<br/>
+						Your module, bundle, plugin, service provider etc... must be only a wrapper for the external library.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Drupal Commerce</h2>
+					<hr>
+					<p><img src="assets/images/drupal-commerce.png" alt="" class="no-border">	</p>
+					<p><a href="https://github.com/commerceguys/commerce">https://github.com/commerceguys/commerce</a></p>
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="white big">The HTTP Lifecycle</h1>
+				</section>
+
+				<section>
+					<h3 class="title">
+						In every web application, in any language, you always have one goal, read and understand the incoming HTTP request in order to create and return the appropriate HTTP response.
+					</h3>
+					<aside class="notes">
+						<p>In every web application regardless of the used language or framework.</p>
+						<p>You are probably working with PHP using Symfony, Silex, Drupal or Laravel or may you are working with Pyhton using Django or Flask, how about Ruby using Rails or Java developing with Scala.</p>
+						<p>Your only goal as a web developer is to properly understand the incoming HTTP Request in order to build and return and appropiate HTTP response.</p>
+						<p>The client sends an HTTP request. When I said client this could be a web-site, mobile app or even an application runing from the terminal.</p>
+						<p>Now as I mentioned before it is your responsability to build a proper response, this will be based on what the client is asking for, this could be anything form a HTML page to JSON, XML even and attachment or a multimedia file as well.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>The Request/Response Flow</h2>
+					<hr/>
+					<br/>
+					<img src="assets/images/request-response-flow.png"
+					class="no-border" />
+					<aside class="notes">
+						<p>Well the flow looks like this.</p>
+						<p>Symfony/Silex/Drupal use the front controller design-pattern. This mean every single request is routed from a PHP file app.php or app_ENV.php in the case of Symfony and index.php if using Silex or Drupal. The main goal of the front controller is to bootstrap your Application and performing the global initialization of required objects.</p>
+						<p>Also takes care of extracting information form the requested URL about the path and match this on the routing system and then execute the proper Controller.</p>
+					</aside>
+				</section>
+
+	        <section>
+	          <h2>Routing</h2>
+	          <hr/>
+	          <br/>
+	          <h3 class="title">A route is a map from a URL path to a controller.</h3>
+			  <aside class="notes">
+				<p>We can define a Route as a map from a URL to a controller.</p>
+				<p>Is in the route definition where where we especify the path for a resource and the controller that will be executed.</p>
+				<p>Now that I have been mentioning the Controller</p>
+			  </aside>
+	        </section>
+
+	        <section>
+	          <h2>Controller</h2>
+			  <hr/>
+			  <br/>
+	          <h3 class="title">A controller is a PHP method or call-back that takes information from the HTTP request and constructs and returns an HTTP response.</he>
+			  <aside class="notes">
+				<p>A Controller is a method or call-back that takes information from the HTTP request object and based on the implemented code contructs and returns a proper HTTP response.</p>
+				<p>Lets see how these two looks in code.</p>
+			  </aside>
+	        </section>
+
+			<section>
+						<h2>Route/Controller - Symfony</h2>
+						<hr/>
+<h4>src/AppBundle/resources/config/routing.yml</h4>
+<pre><code class="text yml">hello_name:
+    path:     /hello/{name}
+    defaults: { _controller: AppBundle:Hello:index }
+</code></pre>
+<br/>
+<h4>src/AppBundle/Controller/HelloController.php</h4>
+<pre><code class="text-medium php">namespace AppBundle\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+
+class HelloController {
+
+  public function indexAction($name) {
+    return new Response('Hello '.$name);
+  }
+}
+</code></pre>
+					<aside class="notes">
+						<p>In order to add a new route and the matching controller in Symfony we need to declare this on the Bundle routing.yml file.</p>
+						<p>Within this file, the Route name, the matching Path and the executed controller must be given.</p>
+						<p>A Controller class must be added this class must containing a method that returns the proper HTTP response.</p>
+						<p>Remeber what I told you about Symfony-isms. If you pay attention to the  _controller: key value it does not include the words Controller for the Class and Action for the method, what it means for this case we are using a shortcut not the fully qualified path name.</p>
+					</aside>
+					</section>
+
+					<section>
+						<h2>Route/Controller - Silex</h2>
+						<hr/>
+<h4>web/index.php</h4>
+<pre><code class="text-medium php">
+require_once __DIR__.'/../vendor/autoload.php';
+
+$app = new Silex\Application();
+
+$app->get('/hello/{name}', function($name) {
+    return 'Hello '.$name;
+});
+
+$app->run();
+
+</code></pre>
+					<aside class="notes" style="width:1240px;">
+						<p>Silex it is a Microframework and by default is more simple, what you see here is a complete Silex aplication.</p>
+						<p>The way I am registering a new route in this code is:</p>
+						<p>Creating a new instance of the Silex/Application class and using the get method on the app object. You may also use post/match methods depending on your needs.</p>
+						<p>The get() method it's exepecting two arguments the first is the path of the resource and the second is a closure or anonymous function, from there we can return a String</p>
+						<p>What if my application need to scale and grow.</p>
+					</aside>
+					</section>
+
+					<section>
+						<h2>Route/Controller - Silex</h2>
+						<hr/>
+<h4>web/index.php</h4>
+<pre><code class="text-normal php line-numbers">$app->get(
+  '/hello-controller/{name}',
+  'DrupalCampSP\Controller\HelloController::indexAction'
+);
+</code></pre>
+<br/>
+<h4>src/DrupalCampSP/Controller/HelloController.php</h4>
+<pre><code class="text-medium php line-numbers">namespace DrupalCampSP\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+
+class HelloController {
+  public function indexAction($name) {
+    return new Response('Hello '.$name);
+  }
+}
+</code></pre>
+					<aside class="notes">
+						<p>One common misconception about Silex and microframeworks in general is that they are only for small, simple app and APIs. Which is not true</p>
+						<p>When you need to scale your Silex app, you need to organize and structure your code into different file classes.</p>
+						<p>For this example a new Controller class must be created with a method returning a HTTP Response object. Yeah the exact same code we use on the Symfony example. Do you see where I am going.</p>
+						<p>In order to register this ControllerClass we replaced the second argument passed to the get() method and use the fully qualified path name and the methodName separated by double ::</p>
+						<p>As you can see here, we are using Controller and Action.</p>
+					</aside>
+					</section>
+
+					<section>
+						<h2>Route/Controller - Drupal</h2>
+						<hr/>
+<h4>drupalcampsp.routing.yml</h4>
+<pre><code class="text yml">drupalcampsp.hello_controller:
+  path: 'hello/{name}'
+  defaults:
+    _content: '\Drupal\drupalcampsp\Controller\HelloController::index'
+</code></pre>
+<br/>
+<h4>src/Controller/HelloController.php</h4>
+<pre><code class="text php">namespace Drupal\drupalcampsp\Controller;
+
+class HelloController {
+
+  public function index($name)
+  {
+    return [
+        '#type' => 'markup',
+        '#markup' => $this->t('Hello @name!', ['@name' => $name])
+    ];
+  }
+}
+</code></pre>
+				<aside class="notes">
+					<p>In order to achieve this in Drupal we declares a new route at the MODULE_NAME.routing.yml file, adding the Route name and Path.</p>
+					<p>But instead of using _controller we will replace it with _content 'That was a Drupal-isms' and point to the Controller the same way we did it on Silex, we will be using the fully qualified path name plus :: methodName.</p>
+					<p>A new Controller Class must be added with a method that could return a String.</p>
+					<p>As you can see it's kinda a mix of Symfony & Silex but the final result is pretty similar and we shared a lot of concepts and code.</p>
+				</aside>
+
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="white big">3rd party libraries and projects</h1>
+				</section>
+
+				<section data-background="#000">
+					<h1 class="white big">You should be using</h1>
+				</section>
+
+				<section data-background="#0076C2">
+					<h1 class="white big">Seriously</h1>
+				</section>
+
+				<section>
+					<h2>Testing</h2>
+					<hr>
+					<p>
+						<h3 class="title">PHPUnit is a programmer-oriented testing framework for PHP.</h3>
+						<a href="https://phpunit.de/">https://phpunit.de/</a>
+					</p>
+					<br/>
+					<p>
+						<h3 class="title">Behat is an open source behavior-driven development framework for PHP 5.3 and 5.4.</h3>
+						<a href="http://behat.org">http://behat.org</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>PHP Coding Standards Fixer</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/cs-sensio.png" border="0" class="no-border" />
+					</p>
+					<p>
+						<a href="http://cs.sensiolabs.org/">http://cs.sensiolabs.org/</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Insight</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/insight-sensio.png" border="0" class="no-border" />
+					</p>
+					<br/>
+					<p>
+						<a href="https://insight.sensiolabs.com/">https://insight.sensiolabs.com/</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Security Vulnerability Checker</h2>
+					<hr/>
+					<p>
+						<img src="assets/images/sensio-security.png" border="0" class="no-border" />
+					</p>
+					<br/>
+					<p>
+						<a href="https://security.sensiolabs.org/">
+							https://security.sensiolabs.org/
+						</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>WebProfiler</h2>
+					<hr/>
+					<h3 class="title">Collects information about each request made to your application and allows you to visualize it in the browser.</h3>
+					<br/>
+					<p>
+						<img src="assets/images/webprofiler-symfony.png" border="0" class="no-border" />
+					</p>
+				</section>
+				<section>
+					<h2>WebProfiler</h2>
+					<hr/>
+					<h3>Symfony</h3>
+					<div><a href="https://github.com/symfony/WebProfilerBundle">https://github.com/symfony/WebProfilerBundle</a></div>
+					<br/>
+					<h3>Silex</h3>
+					<div><a href="https://github.com/silexphp/Silex-WebProfiler">https://github.com/silexphp/Silex-WebProfiler</a></div>
+					<br/>
+					<h3>Drupal</h3>
+					<div><a href="https://www.drupal.org/project/webprofiler">https://www.drupal.org/project/webprofiler</a></div>
+				</section>
+
+				<section>
+					<h2>LadyBug</h2>
+					<hr>
+					<h3 class="title">Ladybug provides an easy and extensible var_dump/print_r replacement for PHP 5.3+.</h3>
+					<p>
+						<img src="assets/images/ladybug.png" border="0" class="no-border" />
+					</p>
+					<p>
+						<a href="https://github.com/raulfraile/ladybug">https://github.com/raulfraile/ladybug</a>
+					</p>
+				</section>
+				<section>
+					<h2>LadyBug</h2>
+					<hr>
+					<h3>Symfony</h3>
+					<a href="https://github.com/raulfraile/LadybugBundle">https://github.com/raulfraile/LadybugBundle</a>
+					<br/><br/>
+					<h3>Silex</h3>
+					<a href="https://github.com/bangpound/ladybug-silex-provider">https://github.com/bangpound/ladybug-silex-provider</a>
+					<br/><br/>
+					<h3>Drupal</h3>
+					<a href="https://www.drupal.org/project/ld">https://www.drupal.org/project/ld</a>
+				</section>
+
+				<section>
+					<h2>Console</h2>
+					<hr/>	
+					<h3 class="title">The Console component allows you to create command-line commands.</h3>
+				</section>
+
+				<section>
+					<h2>Console</h2>
+					<hr>
+					<h3>Symfony</h3>
+					<p><a href="https://github.com/symfony/Console">https://github.com/symfony/Console</a></p>
+					<br/>
+					<h3>Silex</h3>
+					<p><a href="https://github.com/KnpLabs/ConsoleServiceProvider">https://github.com/KnpLabs/ConsoleServiceProvider</a></p>
+					<br/>
+					<h3>Drupal</h3>
+					<p><a href="http://drupalconsole.com/">http://drupalconsole.com/</a></p>
+				</section>
+
+				<section>
+					<h2>DrupalCI</h2>
+					<hr/>
+					<h3 class="title">
+						This project is intended as a collection and organization point for the "Modernizing Testbot" project
+					</h3>
+					<a href="https://www.drupal.org/project/drupalci">https://www.drupal.org/project/drupalci</a>
+				</section>
+
+				<section>
+					<p>
+					<h3 class="title">
+						Terra is the spiritual successor to Aegir & DevShop.
+						Terra uses Docker and Docker compose to stand up websites.
+					</h3>
+					<a href="https://github.com/terra-ops/terra-app">https://github.com/terra-ops/terra-app</a>
+					</p>
+					<br/>
+					<p>
+					<h3 class="title">Drocker.io - A framework designed for Drupal to build fast, isolated development environments using Docker.</h3>
+					<a href="http://drocker.io/">http://drocker.io/</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Questions & Feedback</h2>
+					<hr/>
+					<h3 class="title">Feel free to stalk me during the event or ask any question at:</h3>
+					<h2>@jmolivas</h2>
+					<p>
+						<br/>
+						<a href="http://bit.ly/dcsp2015-new-php">
+							http://bit.ly/dcsp2015-new-php
+						</a>
+					</p>
+				</section>
+
+		</section>
+
+			</div>
+		</div>
+
+<!--     <footer>
+   		<div class="align-left">
+   			  <img src="assets/images/blinkreaction-logo.png" class="no-border">
+   		</div>
+   		<div class="align-right">
+   			  <h3>SANDCamp 2015</h3>
+   		</div>
+    </footer> -->
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+
+		<script>
+
+
+			var contributors = [
+				'albertvolkman', 'alexweber', 'azarzag', 'benjy', 'bojanz', 'brantwynn', 'carlosroh', 'chi-teck',
+				'chipkaye', 'cordoval', 'crell', 'czettnersandor', 'danielnv18', 'dasjo', 'dmouse', 'edutrul',
+				'egulias', 'emacoti','enzolutions','esod', 'flocondetoile', 'fluxsauce', 'greg-1-anderson', 
+				'hugronaphor', 'itsekhmistro', 'jaesin', 'jeqq', 'jjcarrion', 'jmolivas', 'joshuataylor', 
+				'kendallsv', 'kgaut', 'kostajh', 'langelhc', 'lowellmontgomery', 'lucasmingarro', 'lussoluca', 
+				'martinfrances107', 'miguelc301', 'mimioc', 'mmenavas', 'omero', 'revagomes', 'rpayanm', 
+				'sethfischer','vacho', 'webflo'
+			];
+
+			$.each(contributors, function( index, value ) {
+  				$('.contributors').append('<div class="contributor">' +
+  					'<a target="_blank"  href="https://github.com/'+value+'">' +
+  					'<img src="assets/images/contributors/'+value+'.jpg">' +
+  					'</a>' +
+  					'<div class="username">' + value + '</div></div>');
+			});
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+					// { src: 'plugin/leap/leap.js', async: true }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+	</body>
+</html>
